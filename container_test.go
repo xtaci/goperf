@@ -16,7 +16,7 @@ func BenchmarkLoopSlice(b *testing.B) {
 func BenchmarkLoopList(b *testing.B) {
 	l := list.New()
 	for i := 0; i < b.N; i++ {
-		l.PushBack(byte(i))
+		l.PushBack(nil)
 	}
 
 	b.ResetTimer()
